@@ -1,0 +1,87 @@
+h1{
+    color : rgb(214, 87, 19);
+}
+
+#Traffic{
+    position : absolute;
+    top : 100px;
+    left :200px;
+    height : 450px;
+    width : 150px;
+    border : 2px solid black;
+}
+
+@keyframes light {
+    from {background-color: rgb(206, 242, 152);}
+    to {background-color: red;}
+}
+
+#red{
+    position : absolute;
+    top : 10px;
+    left :20px;
+    height : 100px;
+    width : 100px;
+    background-color: rgb(206, 242, 152);
+    border : 2px solid black;
+    border-radius: 50%;
+    animation-name: light;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hello {
+    from {background-color: rgb(116, 105, 105);}
+    to {background-color: yellow;}
+}
+
+#yellow{
+    position : absolute;
+    top : 165px;
+    left :20px;
+    height : 100px;
+    width : 100px;
+    background-color: rgb(116, 105, 105);
+    border : 2px solid black;
+    border-radius: 50%;
+    animation-name: hello;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes traffic {
+    from {background-color: rgb(54, 51, 51);}
+    to {background-color: green;}
+}
+
+#green{
+    position : absolute;
+    top : 320px;
+    left :20px;
+    height : 100px;
+    width : 100px;
+    background-color: rgb(54, 51, 51);
+    border : 2px solid black;
+    border-radius: 50%;
+    animation-name: traffic;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+
+.loder{
+    position: absolute;
+    top : 700px;
+    left : 50px;
+    height : 200px;
+    width : 200px;
+    border : 15px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    border-top : 15px solid rgb(250, 108, 0);
+    animation: spin 4s ease 0s infinite normal;
+}
+
+@keyframes spin{
+    from{ transform : rotate(0deg);}
+    to{ transform : rotate(360deg);}
+}
